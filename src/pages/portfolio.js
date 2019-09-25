@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 import SlideView from "../components/SlideView";
-import Layout from "../components/Layout";
-import SEO from "../components/Seo";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 import PageTitle from "../components/styled/PageTitle";
 import { useSpring, animated, config } from "react-spring";
 
