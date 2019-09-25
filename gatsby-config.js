@@ -19,6 +19,10 @@ module.exports = {
             family: `Open Sans`,
             variants: [`400`, `700`, `800`],
           },
+          {
+            family: `Acme`,
+            variants: [`400`],
+          },
         ],
       },
     },
