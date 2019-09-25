@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
     @media screen and (max-width: 600px) {
       font-size: 9px;
     }
-    
+
     @media screen and (max-width: 480px) {
       font-size: 8px;
     }
@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
     list-style-type: none;
   }
 
-  
+
 
 `;
 

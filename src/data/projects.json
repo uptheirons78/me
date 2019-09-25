@@ -1,26 +1,47 @@
 [
   {
-    "title": "My First Project",
-    "date": "Aug 2019",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae, autem eos voluptatum assumenda cum laborum iure nam in accusantium.",
-    "website": "https://example.com",
-    "github": "https://example.com",
-    "thumbnailImage": "../images/projects/placeholder.jpg"
+    "title": "Resort",
+    "date": "2019-08-23T18:25:43.511Z",
+    "displayDate": "Aug 2019",
+    "description": "Full Stack App built with React and Contentful Api using also React Icons, React Router and React Context Api to manage Components State.",
+    "website": "https://mb78-react-resort.netlify.com/",
+    "github": "https://github.com/uptheirons78/resort",
+    "thumbnailImage": "../images/projects/resort-project.jpg"
   },
   {
-    "title": "My Second Project",
-    "date": "Sept 2018",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae, autem eos voluptatum assumenda cum laborum iure nam in accusantium.",
-    "website": "https://example.com",
-    "github": "https://example.com",
-    "thumbnailImage": "../images/projects/placeholder.jpg"
+    "title": "Contact Keeper",
+    "date": "2019-08-10T18:25:43.511Z",
+    "displayDate": "Aug 2019",
+    "description": "A MERN Stack Contacts Manager App. On the Back-End it is built using: Node, Express, JWT, Express-Validator, MongoDB and Mongoose. Front-End is created using React (Hooks and Context Api).",
+    "website": "https://aqueous-depths-36684.herokuapp.com/login",
+    "github": "https://github.com/uptheirons78/contact-keeper",
+    "thumbnailImage": "../images/projects/contact-keeper.jpg"
   },
   {
-    "title": "My Third Project",
-    "date": "Dec 2018",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae, autem eos voluptatum assumenda cum laborum iure nam in accusantium.",
-    "website": "https://example.com",
-    "github": "https://example.com",
-    "thumbnailImage": "../images/projects/placeholder.jpg"
+    "title": "Github Finder",
+    "date": "2019-07-31T18:25:43.511Z",
+    "displayDate": "Jul 2019",
+    "description": "Front End Application built using React and the Github Api to search users profile. State is managed with Hooks and Context Api",
+    "website": "https://ghfinder786971.netlify.com/",
+    "github": "https://github.com/uptheirons78/gh-finder",
+    "thumbnailImage": "../images/projects/gh-finder.jpg"
+  },
+  {
+    "title": "HKR News",
+    "date": "2019-07-20T18:25:43.511Z",
+    "displayDate": "Jul 2019",
+    "description": "Front End Application built using React and Hacker News Api to search for posts and news related with the the search term. Built with 'legacy' React (Class based Components)",
+    "website": "https://uptheirons78.github.io/hkrnews/",
+    "github": "https://github.com/uptheirons78/hkrnews",
+    "thumbnailImage": "../images/projects/hkrnews.jpg"
+  },
+  {
+    "title": "Clear View Escape",
+    "date": "2018-09-17T18:25:43.511Z",
+    "displayDate": "Sept 2018",
+    "description": "Front End Website Layout built with a Gulp Environment, Webpack, PostCSS and different plugins to manage animations and images loading",
+    "website": "https://uptheirons78.github.io/travel-site/",
+    "github": "https://github.com/uptheirons78/travel-site",
+    "thumbnailImage": "../images/projects/escapes.jpg"
   }
 ]

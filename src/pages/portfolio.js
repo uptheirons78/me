@@ -1,24 +1,43 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import Paragraph from "../components/styled/Paragraph";
+import { graphql } from "gatsby";
+import SlideView from "../components/SlideView";
+import Layout from "../components/Layout";
+import SEO from "../components/Seo";
 import PageTitle from "../components/styled/PageTitle";
 
-const Portfolio = () => (
-  <Layout>
-    <SEO title="Portfolio" />
-    <PageTitle>My Portfolio</PageTitle>
-    <Paragraph>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ipsum
-      architecto sunt beatae quam deserunt laboriosam? Corporis eaque est sint
-      ipsa commodi dolor minus ducimus praesentium magnam nemo ab optio iste,
-      nostrum qui asperiores odio! Totam rem assumenda aliquam maiores ea iste
-      esse, consectetur voluptatibus! Sunt recusandae nulla deserunt blanditiis
-      voluptates reprehenderit sapiente ex fugiat aliquid placeat soluta neque,
-      numquam possimus illo in ab sequi. Fugiat magnam non voluptatibus possimus
-      fugit tenetur.
-    </Paragraph>
-  </Layout>
-);
+const Portfolio = ({ data }) => {
+  return (
+    <Layout>
+      <SEO title="Portfolio" />
+      <PageTitle>My Portfolio</PageTitle>
+      <SlideView projects={data.allProjectsJson.edges} />
+    </Layout>
+  );
+};
 
 export default Portfolio;
+
+//graphql query to collect Projects Data from ../data/projects.json
+export const projectsQuery = graphql`
+  query {
+    allProjectsJson(sort: { order: DESC, fields: [date] }) {
+      edges {
+        node {
+          id
+          title
+          displayDate
+          description
+          website
+          github
+          thumbnailImage {
+            childImageSharp {
+              fluid(maxWidth: 400) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;

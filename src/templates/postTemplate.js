@@ -1,14 +1,14 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Img from 'gatsby-image';
-import PageTitle from '../components/styled/PageTitle';
-import Paragraph from '../components/styled/Paragraph';
-import StyledPostFrontmatter from '../components/styled/StyledPostFrontmatter';
-import StyledPostWrapper from '../components/styled/StyledPostWrapper';
-import StyledImageContainer from '../components/styled/StyledImageContainer';
-import StyledPostBody from '../components/styled/StyledPostBody';
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import SEO from "../components/Seo";
+import Img from "gatsby-image";
+import PageTitle from "../components/styled/PageTitle";
+import Paragraph from "../components/styled/Paragraph";
+import StyledPostFrontmatter from "../components/styled/StyledPostFrontmatter";
+import StyledPostWrapper from "../components/styled/StyledPostWrapper";
+import StyledImageContainer from "../components/styled/StyledImageContainer";
+import StyledPostBody from "../components/styled/StyledPostBody";
 
 const postTemplate = ({ data }) => {
   const { markdownRemark } = data;
@@ -22,7 +22,10 @@ const postTemplate = ({ data }) => {
           <PageTitle>{frontmatter.title}</PageTitle>
           <Paragraph>Published: {frontmatter.date}</Paragraph>
           <StyledImageContainer>
-            <Img className='featured-image' fluid={frontmatter.thumbnail.childImageSharp.fluid} />
+            <Img
+              className="featured-image"
+              fluid={frontmatter.thumbnail.childImageSharp.fluid}
+            />
           </StyledImageContainer>
         </StyledPostFrontmatter>
         <StyledPostBody dangerouslySetInnerHTML={{ __html: html }} />
