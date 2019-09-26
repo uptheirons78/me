@@ -5,41 +5,51 @@ import SEO from "../components/seo";
 import Img from "gatsby-image";
 import Paragraph from "../components/styled/Paragraph";
 import PageTitle from "../components/styled/PageTitle";
+import { useSpring, animated } from "react-spring";
 import styled from "styled-components";
 
 const IndexPage = ({ data }) => {
   const name = "Mauro \nBono";
 
+  const fade = useSpring({
+    config: { duration: 2000 },
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+  });
+
   return (
     <Layout>
       <SEO title="Home" />
-      <StyledHomeContainer>
-        <StyledTitleContainer className="title-container">
-          <HomeTitle>{name}</HomeTitle>
-        </StyledTitleContainer>
-        <StyledImageContainer className="image-container">
-          <Img fluid={data.myImage.childImageSharp.fluid} alt="mauro bono" />
-        </StyledImageContainer>
-        <StyledInfoContainer className="info">
-          <HomeParagraph>Hi, I'm Mauro.</HomeParagraph>
-          <HomeParagraph>
-            I am a Web Developer based in Rome, Italy.
-          </HomeParagraph>
-          <HomeParagraph>
-            I'm specialized in HTML, CSS, JavaScript, ReactJS and Gatsby on the
-            Front-End. Comfortable with NodeJS and MongoDB on the Back-End. I've
-            been working with Wordpress and PHP since 2008. Check out my{" "}
-            <a
-              href="https://github.com/uptheirons78"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>{" "}
-            profile.
-          </HomeParagraph>
-        </StyledInfoContainer>
-      </StyledHomeContainer>
+      <animated.div style={fade}>
+        <StyledHomeContainer>
+          <StyledTitleContainer className="title-container">
+            <HomeTitle>{name}</HomeTitle>
+          </StyledTitleContainer>
+          <StyledImageContainer className="image-container">
+            <Img fluid={data.myImage.childImageSharp.fluid} alt="mauro bono" />
+          </StyledImageContainer>
+          <StyledInfoContainer className="info">
+            <HomeParagraph>Hi, I'm Mauro.</HomeParagraph>
+            <HomeParagraph>
+              I am a Web Developer based in Rome, Italy.
+            </HomeParagraph>
+            <HomeParagraph>
+              I'm specialized in HTML, CSS, JavaScript, ReactJS and Gatsby on
+              the Front-End. Comfortable with NodeJS and MongoDB on the
+              Back-End. I've been working with Wordpress and PHP since 2008.
+              Check out my{" "}
+              <a
+                href="https://github.com/uptheirons78"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>{" "}
+              profile.
+            </HomeParagraph>
+          </StyledInfoContainer>
+        </StyledHomeContainer>
+      </animated.div>
     </Layout>
   );
 };
