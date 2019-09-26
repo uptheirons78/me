@@ -41,19 +41,24 @@ const StyledForm = styled.form`
     color: var(--paragraph-color);
   }
 
+  #message {
+    margin-bottom: 1rem;
+  }
+
   #sendBtn {
     border: 0;
+    border-radius: 5px;
     background: var(--primary-color);
     padding: 1rem 0.5rem;
     color: #fff;
     margin: 2rem 0;
     width: 100%;
     text-transform: uppercase;
-    transition: all 0.35ms ease-in-out;
+    transition: all 0.35s ease-in-out;
     cursor: pointer;
 
     &:hover {
-      background: #3498db;
+      background: #19747e;
     }
   }
 `;
