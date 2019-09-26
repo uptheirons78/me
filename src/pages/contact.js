@@ -34,14 +34,16 @@ const Contact = () => {
       <StyledFormWrapper>
         <animated.div style={fade}>
           <StyledForm name="Contact Form" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="Contact Form" />
             <label for="name">Name</label>
             <input type="text" id="name" />
             <label for="email">Email</label>
             <input type="text" id="email" />
             <label for="message">Message</label>
             <textarea id="message" cols="30" rows="8"></textarea>
-            <input type="button" value="Send" id="sendBtn" />
-            <div data-netlify-recaptcha="true"></div>
+            <button type="submit" id="sendBtn">
+              Send
+            </button>
           </StyledForm>
           <StyledH2>{hint}</StyledH2>
           <Paragraph>
