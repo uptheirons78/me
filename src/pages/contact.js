@@ -36,11 +36,11 @@ const Contact = () => {
           <StyledForm name="Contact Form" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="Contact Form" />
             <label for="name">Name</label>
-            <input type="text" id="name" />
+            <input name="name" type="text" id="name" />
             <label for="email">Email</label>
-            <input type="text" id="email" />
+            <input name="email" type="text" id="email" />
             <label for="message">Message</label>
-            <textarea id="message" cols="30" rows="8"></textarea>
+            <textarea name="message" id="message" cols="30" rows="8"></textarea>
             <button type="submit" id="sendBtn">
               Send
             </button>
