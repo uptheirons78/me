@@ -29,25 +29,23 @@ const About = () => {
         <Paragraph>
           It all started in the late 2008 when a good friend of mine asked me if
           I knew someone to help him to build a website. His budget was so low
-          he couldn't find a good developer to help him and being the good guy I
-          am{" "}
-          <span role="img" aria-label="emoji">
-            😜
-          </span>{" "}
-          I decided to do it for free. So I discovered something called
-          Wordpress and really felt in love with this world.
+          he couldn't find a good developer to help him and, being the good guy
+          I am, I decided to do it for free. So I discovered "something" called
+          Wordpress and really felt in love with coding and building websites.
         </Paragraph>
         <Paragraph>
           On my spare time I started learning HTML and the basic of CSS. Then I
           began to play just a little with PHP, Custom Post Types, Advanced
           Custom Fields and some JQuery to create my own themes or to change and
-          modify others. I never thought I could change my career and built many
-          websites for my friends and for fun until I realized I like coding and
-          what a dream it can be to do it on a daily basis.
+          modify others as needed. I really never thought it was possible to
+          change my career (I studied law and worked for a law firm) so I just
+          built many websites for friends, used my coding skills for a "side
+          hustle" or simply for fun until I realized how much I like coding and
+          what a dream it would be to do it on a daily basis.
         </Paragraph>
         <Paragraph>
-          So during 2017 I started learning Vanilla Javascript and on September
-          of the same here I've got my Front-End Certification on FreeCodeCamp.
+          So in 2017 I started learning Vanilla Javascript and on September of
+          the same here I've got my Front-End Certification on FreeCodeCamp.
           Then I added Node, Express, MongoDB and React to my skills so I could
           provide Full-Stack Javescript services to clients.
         </Paragraph>
