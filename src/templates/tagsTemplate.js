@@ -1,6 +1,10 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
+import PageTitle from "../components/styled/PageTitle";
+import StyledInternalLink from "../components/styled/StyledInternalLink";
+import { useSpring, animated, config } from "react-spring";
+import styled from "styled-components";
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext;
@@ -9,24 +13,42 @@ const Tags = ({ pageContext, data }) => {
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`;
 
+  const slideIn = useSpring({
+    config: config.slow,
+    from: { opacity: 0, marginLeft: -500 },
+    to: { opacity: 1, marginLeft: 0 },
+  });
+
+  const fade = useSpring({
+    config: { duration: 2000 },
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+  });
+
   return (
     <Layout>
-      <h1>{tagHeader}</h1>
-      <section>
-        <ul>
-          {edges.map(({ node }) => {
-            const { title, date, path } = node.frontmatter;
-            return (
-              <li key={path}>
-                <Link to={path}>
-                  {title} ({date})
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-        <Link to="/tags">All tags</Link>
-      </section>
+      <animated.div style={slideIn}>
+        <PageTitle>{tagHeader}</PageTitle>
+      </animated.div>
+      <animated.div style={fade}>
+        <section>
+          <ul>
+            {edges.map(({ node }) => {
+              const { title, date, path } = node.frontmatter;
+              return (
+                <li key={path}>
+                  <StyledTagLink to={path}>
+                    {title} ({date})
+                  </StyledTagLink>
+                </li>
+              );
+            })}
+          </ul>
+          <StyledTagLink reversed to="/tags">
+            All tags
+          </StyledTagLink>
+        </section>
+      </animated.div>
     </Layout>
   );
 };
@@ -52,4 +74,8 @@ export const pageQuery = graphql`
       }
     }
   }
+`;
+
+const StyledTagLink = styled(StyledInternalLink)`
+  line-height: 3;
 `;

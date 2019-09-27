@@ -43,5 +43,14 @@
     "website": "https://uptheirons78.github.io/travel-site/",
     "github": "https://github.com/uptheirons78/travel-site",
     "thumbnailImage": "../images/projects/escapes.jpg"
+  },
+  {
+    "title": "Greatsby",
+    "date": "2019-09-09T18:25:43.511Z",
+    "displayDate": "Sept 2019",
+    "description": "Starter Theme for a personal blog website built with Gatsby and Contentful Api. I've added some very basic styles using Sass",
+    "website": "https://wonderful-kare-ca45f5.netlify.com/",
+    "github": "https://github.com/uptheirons78/greatsby",
+    "thumbnailImage": "../images/projects/greatsby.jpg"
   }
 ]
