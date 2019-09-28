@@ -42,7 +42,11 @@ const Contact = () => {
             <input name="email" type="text" id="email" />
             <label for="message">Message</label>
             <textarea name="message" id="message" cols="30" rows="8"></textarea>
-            <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} />
+            <ReCAPTCHA
+              sitekey={process.env.GATSBY_RECAPTCHA_KEY}
+              theme="dark"
+              size="compact"
+            />
             <button type="submit" id="sendBtn">
               Send
             </button>
