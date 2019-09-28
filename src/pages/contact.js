@@ -51,7 +51,7 @@ const Contact = () => {
             </button>
           </StyledForm>
           <StyledH2>{hint}</StyledH2>
-          <Paragraph>
+          <Paragraph style={{ textAlign: "center" }}>
             If you like my works and have some cool project to build, just fill
             the form or contact me through my social media listed below.
           </Paragraph>

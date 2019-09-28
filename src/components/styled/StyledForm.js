@@ -9,7 +9,7 @@ const StyledH2 = styled.h2`
   text-align: center;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: var(--primary-color);
   text-transform: uppercase;
 `;
