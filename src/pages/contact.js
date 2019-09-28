@@ -9,8 +9,7 @@ import {
   StyledForm,
   StyledH2,
 } from "../components/styled/StyledForm";
-// import ReCAPTCHA from "react-google-recaptcha";
-import ReCaptchaContainer from "../components/ReCaptchaContainer";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const hint = "Let's Build \nSomething \nGreat !";
@@ -43,12 +42,10 @@ const Contact = () => {
             <input name="email" type="text" id="email" />
             <label for="message">Message</label>
             <textarea name="message" id="message" cols="30" rows="8"></textarea>
-            {/* <ReCAPTCHA
+            <ReCAPTCHA
               sitekey={process.env.GATSBY_RECAPTCHA_KEY}
-              theme="dark"
               size="compact"
-            /> */}
-            <ReCaptchaContainer />
+            />
             <button type="submit" id="sendBtn">
               Send
             </button>
