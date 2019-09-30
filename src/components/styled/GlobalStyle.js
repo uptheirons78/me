@@ -24,9 +24,9 @@ const GlobalStyle = createGlobalStyle`
       font-size: 9px;
     }
 
-    /* @media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
       font-size: 8px;
-    } */
+    }
   }
 
   body {
