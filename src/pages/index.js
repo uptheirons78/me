@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import SEO from "../components/seo";
 import picture from "../images/mauro.jpg";
 import { useSpring, animated } from "react-spring";
 import {
@@ -21,6 +22,7 @@ const Test = () => {
 
   return (
     <Layout>
+      <SEO title="Home" />
       <animated.div style={fade}>
         <HomeWrapper>
           <SiteTitle>{pageTitle}</SiteTitle>
