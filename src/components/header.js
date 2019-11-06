@@ -2,6 +2,21 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import StyledHeader from "./styled/StyledHeader";
+import Logo from "../images/logo.png";
+import styled from "styled-components";
+
+const StyledLogo = styled.img`
+  width: 200px;
+  height: auto;
+  padding-top: 9px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--primary-color);
+
+  @media screen and (max-width: 600px) {
+    width: 170px;
+    padding-top: 12px;
+  }
+`;
 
 const Header = () => {
   const [hamburgerState, setHamburgerState] = useState(false);
@@ -21,7 +36,7 @@ const Header = () => {
       <div className="container">
         <nav>
           <Link className="navbar-brand" to="/">
-            {"{ MB78 }"}
+            <StyledLogo src={Logo} alt="Mauro Bono" />
           </Link>
           <ul className={navListStyle}>
             {pages.map(page => (
