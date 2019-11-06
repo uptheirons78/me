@@ -35,7 +35,7 @@ const NotFoundPage = () => {
               <Paragraph>
                 Oops! Something went wrong. It is possible the internet is
                 broken, the world is ending or Slartibartfast in Magrathea made
-                a mistake and erase this page while working again on Norway
+                a mistake and erased this page while working again on Norway
                 fjords.
               </Paragraph>
               <Paragraph>
