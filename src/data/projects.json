@@ -48,9 +48,63 @@
     "title": "Greatsby",
     "date": "2019-09-09T18:25:43.511Z",
     "displayDate": "Sept 2019",
-    "description": "Starter Theme for a personal blog website built with Gatsby and Contentful Api. I've added some very basic styles using Sass",
+    "description": "Starter Theme for a personal blog website built with Gatsby and Contentful Cms. I've added some very basic styles using Sass",
     "website": "https://wonderful-kare-ca45f5.netlify.com/",
     "github": "https://github.com/uptheirons78/greatsby",
     "thumbnailImage": "../images/projects/greatsby.jpg"
+  },
+  {
+    "title": "Studio Barberio",
+    "date": "2019-12-09T18:25:43.511Z",
+    "displayDate": "Dec 2019",
+    "description": "Website for an italian Law Firm based in Rome. Built with Gatsby and Netlify CMS. Styled with Bootstrap 4 and Styled Components",
+    "website": "https://www.studiobarberio.org/",
+    "github": "https://github.com/uptheirons78/studio-legale-barberio",
+    "thumbnailImage": "../images/projects/studiobarberio.jpg"
+  },
+  {
+    "title": "Pro Loco Nepi",
+    "date": "2019-12-10T18:25:43.511Z",
+    "displayDate": "Dec 2019",
+    "description": "Website for an italian Local Tourism Organization. Built with Gatsby and Contentful CMS. Completely styled with Styled Components. Layout done with CSS Flexbox and Grid.",
+    "website": "https://www.proloconepi.it/",
+    "github": "https://github.com/uptheirons78/prolocus",
+    "thumbnailImage": "../images/projects/proloconepi.jpg"
+  },
+  {
+    "title": "Roma Travel Agency",
+    "date": "2018-01-14T15:30:00.511Z",
+    "displayDate": "Jan 2018",
+    "description": "A responsive Travel Agency Website made with Flexbox. Part of Advanced Web Dev Bootcamp Course - CSS Section.",
+    "website": "https://uptheirons78.github.io/rome-travel-agency/",
+    "github": "https://github.com/uptheirons78/rome-travel-agency",
+    "thumbnailImage": "../images/projects/romatravelagency.jpg"
+  },
+  {
+    "title": "Natours",
+    "date": "2018-10-23T15:30:00.511Z",
+    "displayDate": "Oct 2018",
+    "description": "A responsive Travel Agency Website made with Flexbox and Sass. Part of Jonas Schmedtmann Advanced CSS and Sass Course.",
+    "website": "https://uptheirons78.github.io/natours/",
+    "github": "https://github.com/uptheirons78/natours",
+    "thumbnailImage": "../images/projects/natours_website.jpg"
+  },
+  {
+    "title": "Elite",
+    "date": "2018-10-26T15:30:00.511Z",
+    "displayDate": "Oct 2018",
+    "description": "UI Design for a booking application or website built with Flexbox, CSS Grid and Sass. Part of Jonas Schmedtmann Advanced CSS and Sass Course.",
+    "website": "https://uptheirons78.github.io/elite/",
+    "github": "https://github.com/uptheirons78/elite",
+    "thumbnailImage": "../images/projects/elite.jpg"
+  },
+  {
+    "title": "Nexter",
+    "date": "2018-11-12T15:30:00.511Z",
+    "displayDate": "Nov 2018",
+    "description": "UI Design for a Luxury Real Estate Agency application or website built with Flexbox, CSS Grid and Sass. Part of Jonas Schmedtmann Advanced CSS and Sass Course.",
+    "website": "https://uptheirons78.github.io/nexter/",
+    "github": "https://github.com/uptheirons78/nexter",
+    "thumbnailImage": "../images/projects/nexter.jpg"
   }
 ]
