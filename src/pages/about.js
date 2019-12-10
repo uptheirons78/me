@@ -85,7 +85,9 @@ const About = () => {
           <StyledH2>Back-End</StyledH2>
           <Paragraph>Node, Express, MongoDB, PHP and MySQL</Paragraph>
           <StyledH2>Content Management Systems (CMS)</StyledH2>
-          <Paragraph>Wordpress, Woocommerce, Contentful</Paragraph>
+          <Paragraph>
+            Wordpress, Woocommerce, Contentful and Netlify-CMS
+          </Paragraph>
           <StyledH2>Operating Systems (OS)</StyledH2>
           <Paragraph>
             Linux Ubuntu, Linux Mint, Windows (7, Vista, 10)
