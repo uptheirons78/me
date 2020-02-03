@@ -122,6 +122,10 @@ export default styled.header`
           right: 0;
           transition: all 650ms;
 
+          &:focus {
+            outline: none !important;
+          }
+
           &:nth-child(1) {
             top: 0;
           }
@@ -138,6 +142,9 @@ export default styled.header`
         }
 
         &.active {
+          &:focus {
+            outline: none !important;
+          }
           .line {
             &:nth-child(1) {
               transform: translateY(0.8rem) rotate(45deg);

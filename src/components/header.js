@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import StyledHeader from "./styled/StyledHeader";
@@ -31,6 +31,15 @@ const Header = () => {
     { name: "Contact", path: "/contact" },
   ];
 
+  const hamburgerRef = useRef(null);
+
+  const handleKeyDown = ev => {
+    if (ev.keyCode === 13) {
+      hamburgerRef.current.focus();
+      setHamburgerState(!hamburgerState);
+    }
+  };
+
   return (
     <StyledHeader>
       <div className="container">
@@ -49,8 +58,13 @@ const Header = () => {
           </ul>
           <div className="hamburger-container">
             <div
+              ref={hamburgerRef}
+              aria-label="Open the menu"
+              role="button"
               className={hamburgerStyle}
               onClick={() => setHamburgerState(!hamburgerState)}
+              onKeyDown={handleKeyDown}
+              tabIndex={0}
             >
               <span className="line"></span>
               <span className="line"></span>

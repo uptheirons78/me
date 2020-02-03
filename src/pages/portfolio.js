@@ -16,12 +16,34 @@ import {
 /**Slider Arrows */
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
-  return <div className={className} style={{ ...style }} onClick={onClick} />;
+  return (
+    <div
+      aria-label="next button"
+      role="button"
+      className={className}
+      style={{ ...style }}
+      onClick={onClick}
+      onKeyDown={e => {
+        console.log(e.keyCode);
+      }}
+    />
+  );
 }
 
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
-  return <div className={className} style={{ ...style }} onClick={onClick} />;
+  return (
+    <div
+      aria-label="previous button"
+      role="button"
+      className={className}
+      style={{ ...style }}
+      onClick={onClick}
+      onKeyDown={e => {
+        console.log(e.keyCode);
+      }}
+    />
+  );
 }
 
 const Portfolio = ({ data }) => {

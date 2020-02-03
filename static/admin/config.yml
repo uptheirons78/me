@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: uptheirons78/me
+
+media_folder: src/images/thumbnails
+public_folder: /images/thumbnails
+
+collections:
+  # Blog Post Type
+  - name: "blog"
+    label: "Blog"
+    folder: "src/pages/blog"
+    create: true
+    editor:
+     preview: false
+    fields:
+      - { label: "Path", name: "path", widget: "string", description: "/blog/javascript-array-methods" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - { label: "Author", name: "author", widget: "string", default: "Mauro Bono" }
+      - { label: "Body", name: "body", widget: "markdown" }
