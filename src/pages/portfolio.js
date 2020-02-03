@@ -19,13 +19,14 @@ function SampleNextArrow(props) {
   return (
     <div
       aria-label="next button"
-      role="button"
+      role="button" // eslint-disable-line no-use-before-define
       className={className}
       style={{ ...style }}
       onClick={onClick}
       onKeyDown={e => {
         console.log(e.keyCode);
       }}
+      tabIndex={0}
     />
   );
 }
@@ -35,13 +36,14 @@ function SamplePrevArrow(props) {
   return (
     <div
       aria-label="previous button"
-      role="button"
+      role="button" // eslint-disable-line no-use-before-define
       className={className}
       style={{ ...style }}
       onClick={onClick}
       onKeyDown={e => {
         console.log(e.keyCode);
       }}
+      tabIndex={0}
     />
   );
 }

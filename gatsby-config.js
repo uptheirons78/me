@@ -51,6 +51,13 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          {
+            resolve: "gatsby-remark-embed-gist",
+            options: {
+              username: "uptheirons78",
+              includeDefaultCss: true,
+            },
+          },
           `gatsby-remark-prismjs`,
         ],
       },

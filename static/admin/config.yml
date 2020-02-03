@@ -1,6 +1,12 @@
 backend:
   name: github
   repo: uptheirons78/me
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
 
 media_folder: src/images/thumbnails
 public_folder: /images/thumbnails
@@ -11,9 +17,11 @@ collections:
     label: "Blog"
     folder: "src/pages/blog"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
      preview: false
     fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - { label: "Path", name: "path", widget: "string", description: "/blog/javascript-array-methods" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
