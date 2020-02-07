@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export default styled.section`
   width: 100%;
@@ -14,7 +14,7 @@ export default styled.section`
   h4,
   h5,
   h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 2rem;
     color: var(--primary-color);
@@ -77,5 +77,12 @@ export default styled.section`
 
   code {
     font-size: 1.6rem;
+  }
+
+  img {
+    margin: 2rem auto;
+    display: block;
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.2),
+      0px 3px 10px rgba(0, 0, 0, 0.1);
   }
 `;

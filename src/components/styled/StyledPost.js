@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default styled.article`
-  margin-bottom: 3rem;
+  margin-bottom: 13rem;
 
   &:not(:last-child) {
     border-bottom: 1px solid rgba(3, 175, 194, 0.3);
