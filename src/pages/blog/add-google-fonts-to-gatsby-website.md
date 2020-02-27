@@ -1,9 +1,14 @@
 ---
 path: /blog/add-google-fonts-to-gatsby-website
 title: How to Add Google Fonts to a Gatsby Website
-date: 2020-02-27
-thumbnail: "../../images/thumbnails/Gatsby__GoogleFonts.png"
-tags: ["gatsby", "javascript", "beginners", "webdev", "jamstack"]
+date: 2020-02-27T00:00:00.000Z
+thumbnail: ../../images/thumbnails/Gatsby__GoogleFonts.png
+tags:
+  - gatsby
+  - javascript
+  - beginners
+  - webdev
+  - jamstack
 author: Mauro Bono
 ---
 I've been learning how to build websites with Gatsby for more than 3 months now and what that I can say is that I don't like it, I really LOVE it 💖!
@@ -19,7 +24,7 @@ If you want to use Google Fonts inside a simple HTML5 and CSS3 project you just 
   <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>My Awesom Website</title>
+    <title>My Awesome Website</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
   </head>
   <body>
