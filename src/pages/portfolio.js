@@ -104,10 +104,14 @@ const Portfolio = ({ data }) => {
                     <p>{description}</p>
                     <ul>
                       <li>
-                        <ExternalLink href={website}>Website</ExternalLink>
+                        <ExternalLink href={website} target="_blank">
+                          Website
+                        </ExternalLink>
                       </li>
                       <li>
-                        <ExternalLink href={github}>Github</ExternalLink>
+                        <ExternalLink href={github} target="_blank">
+                          Github
+                        </ExternalLink>
                       </li>
                     </ul>
                   </StyledInfo>

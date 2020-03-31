@@ -51,15 +51,17 @@ const About = () => {
         </Paragraph>
         <Paragraph>
           The tools I use daily are HTML, CSS (Sass/PostCss), Wordpress,
-          JavaScript, React and Git. I have experience also with PHP, Node.js,
-          Express, MongoDB and MySQL. Working hard day after day I really want
-          to strengthen my programming fundamentals, improve my JavaScript and
-          build more personal projects to grab more familiarity both on the
-          Front-End and the Back-End. Currently, I am really in love with the
-          JAM-Stack ecosystem and working a lot with GatsbyJS, Markdown,
-          GraphQL, and serverless functions. Actually this website is built with
-          Gatsby, Markdown and many fantastic tools like React-Slick and
-          React-Spring.
+          JavaScript, React, Gatsby and Git. I have experience also with PHP,
+          Node.js, Express, MongoDB and MySQL. Working hard day after day I
+          really want to strengthen my programming fundamentals, improve my
+          JavaScript and build more personal projects to grab more familiarity
+          both on the Front-End and the Back-End.
+        </Paragraph>
+        <Paragraph>
+          Currently, I am really in love with the JAM-Stack ecosystem and
+          working a lot with GatsbyJS, Markdown, GraphQL, and serverless
+          functions. Actually this website is built with Gatsby, Markdown and
+          many fantastic tools like React-Slick and React-Spring.
         </Paragraph>
         <Paragraph>
           When I am not in front of a computer, I am probably running, listening
@@ -77,20 +79,27 @@ const About = () => {
       </animated.div>
       <animated.div style={fade}>
         <StyledSection>
+          <StyledH2>Programming Languages</StyledH2>
+          <Paragraph>Javascript and PHP</Paragraph>
           <StyledH2>Front-End</StyledH2>
           <Paragraph>
-            HTML, CSS, Sass, Javascript, JQuery, React, Styled Components,
-            Gatsby, Bootstrap, MaterialUI, Git, Gulp
+            HTML, CSS, Sass, JQuery, React, Styled Components, Gatsby,
+            Bootstrap, MaterialUI, Tailwind Css.
           </Paragraph>
           <StyledH2>Back-End</StyledH2>
-          <Paragraph>Node, Express, MongoDB, PHP and MySQL</Paragraph>
+          <Paragraph>
+            Node, Express, MongoDB. And a little bit of MySQL
+          </Paragraph>
           <StyledH2>Content Management Systems (CMS)</StyledH2>
           <Paragraph>
-            Wordpress, Woocommerce, Contentful and Netlify-CMS
+            Wordpress, Woocommerce, Contentful, Netlify-CMS and Strapi.
           </Paragraph>
+          <StyledH2>Version Control</StyledH2>
+          <Paragraph>Git, Github</Paragraph>
           <StyledH2>Operating Systems (OS)</StyledH2>
           <Paragraph>
-            Linux Ubuntu, Linux Mint, Windows (7, Vista, 10)
+            Linux Ubuntu, Linux Mint, Windows (7, Vista, 10) [ I know how to use
+            Mac OS, but Linux is far better ].
           </Paragraph>
         </StyledSection>
       </animated.div>

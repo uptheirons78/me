@@ -106,5 +106,14 @@
     "website": "https://uptheirons78.github.io/nexter/",
     "github": "https://github.com/uptheirons78/nexter",
     "thumbnailImage": "../images/projects/nexter.jpg"
+  },
+  {
+    "title": "Museo Civico Nepi",
+    "date": "2020-03-30T12:30:00.511Z",
+    "displayDate": "Mar 2020",
+    "description": "Website for an italian local museum. Built with Gatsby and Netlify CMS. Styled with Styled Components with a heavy use of CSS Grid.",
+    "website": "https://museo-civico-nepi.netlify.com/",
+    "github": "https://github.com/uptheirons78/museo-civico-nepi",
+    "thumbnailImage": "../images/projects/museo-civico.jpg"
   }
 ]

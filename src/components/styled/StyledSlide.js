@@ -13,6 +13,9 @@ const SliderWrapper = styled.section`
     height: 65vh;
   }
 
+  /**
+    Arrows styles
+  */
   .slick-arrow {
     @media screen and (max-width: 1024px) {
       display: none;
@@ -49,7 +52,9 @@ const SliderWrapper = styled.section`
       }
     }
   }
-
+  /**
+    Dots styles
+  */
   .slick-dots {
     bottom: 5px !important;
 
@@ -58,9 +63,18 @@ const SliderWrapper = styled.section`
     }
 
     li {
+      @media screen and (max-width: 450px) {
+        margin: 3px !important;
+        width: 10px !important;
+        height: 10px !important;
+      }
       button {
         &::before {
           font-size: 8px !important;
+
+          @media screen and (max-width: 450px) {
+            font-size: 8px !important;
+          }
         }
       }
       &:hover {
